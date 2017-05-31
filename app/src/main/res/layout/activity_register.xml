@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grany_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.china.lhf.app.RegisterActivity">
+
+    <com.china.lhf.app.widget.HomeToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:isShowSearchView="false"
+        app:leftButton="@drawable/icon_back_32px"
+        android:id="@+id/toolbar_shoop_list"
+        app:title="用户注册(1/2)"
+        app:rightButtonText="下一步"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="国家或者地区"
+                android:textSize="30sp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:id="@+id/register_country_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="30sp"
+                android:text="中国"
+                android:padding="10dp"
+                />
+        </RelativeLayout>
+        <View style="@style/line_vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/country_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:padding="10dp"
+                android:text="+86"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <com.china.lhf.app.widget.ClearEditText
+                android:id="@+id/register_phone_ed"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:hint="请输入常用手机号码"
+                />
+        </LinearLayout>
+        <View style="@style/line_vertical"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:padding="10dp"
+                android:text="密码"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <com.china.lhf.app.widget.ClearEditText
+                android:id="@+id/register_pass_ed"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:hint="请输入密码"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="点击“下一步”按钮，表示你同意《非得购用户协议》"
+        android:padding="15dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grany_bg"
+    >
+
+    <com.china.lhf.app.widget.HomeToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:isShowSearchView="false"
+        app:leftButton="@drawable/icon_back_32px"
+        android:id="@+id/toolbar_shoop_list"
+        app:title="用户注册(2/2)"
+        app:rightButtonText="完成"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        >
+    <TextView
+        android:id="@+id/register_phone_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我们已发送验证码短信到这个号码："
+        />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        >
+        <com.china.lhf.app.widget.ClearEditText
+            android:layout_weight="1"
+            android:id="@+id/register_phone_ce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入验证码"
+            />
+        <Button
+            android:id="@+id/register_code_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_style_green"
+            android:text="重新获取验证码"
+            android:layout_alignTop="@+id/register_phone_ce"
+            android:layout_alignEnd="@+id/register_phone_ce" />
+    </LinearLayout>
+
+</LinearLayout>

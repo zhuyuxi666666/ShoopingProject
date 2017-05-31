@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HomeToolbar">
+        <attr name="rightButton" format="reference"/>
+        <attr name="rightButtonText" format="string"/>
+        <attr name="leftButton" format="reference"/>
+        <attr name="isShowSearchView" format="boolean"/>
+    </declare-styleable>
+</resources>

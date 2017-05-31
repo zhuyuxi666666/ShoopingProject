@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item"
+    android:padding="5dp"
+    android:orientation="vertical"
+    >
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/category_wares_img_sdv"
+        android:layout_width="@dimen/ware_grid_img_width"
+        android:layout_height="@dimen/ware_grid_img_height"
+        app:viewAspectRatio="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/category_wares_img_sdv"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hot_wares_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hot_wares_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/crimson"
+            android:layout_gravity="bottom|right"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

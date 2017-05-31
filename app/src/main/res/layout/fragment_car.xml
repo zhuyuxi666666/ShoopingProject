@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/recycler_view"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:clickable="false"
+            android:checked="true"
+            android:textSize="20sp"
+            android:text="全选"
+            android:id="@+id/checkbox_all"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/checkbox_all"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="合计"
+            android:id="@+id/tv_total"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:minWidth="100dp"
+            android:minHeight="30dp"
+            android:text="去结算"
+            style="@style/bigRedButton"
+            android:id="@+id/btn_order"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:minWidth="100dp"
+            android:minHeight="30dp"
+            android:text="删除"
+            style="@style/bigRedButton"
+            android:id="@+id/btn_del"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

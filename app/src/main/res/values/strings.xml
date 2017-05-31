@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">热卖商城</string>
+
+    <string name="home">主页</string>
+    <string name="hot">热卖</string>
+    <string name="category">分类</string>
+    <string name="cart">购物车</string>
+    <string name="mine">我的</string>
+    <string name="to_login">点击登录</string>
+    <string name="token_error">登录失败，请重新登录！</string>
+    <string name="appKey">17fcaf5da4b5c</string>
+
+    <string name="text_order_all">全部</string>
+    <string name="text_order_success">支付成功</string>
+    <string name="text_order_prepare">待支付</string>
+    <string name="text_order_fail">支付失败</string>
+    <string name="add">新建</string>
+    <string name="edit">修改</string>
+    <string name="add_or_edit_addresses">%s收件地址</string>
+</resources>

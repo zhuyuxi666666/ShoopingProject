@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--<dimen name="smallButtonHeight">48.0dp</dimen>-->
+    <!--<dimen name="smallButtonWidth">32.0dp</dimen>-->
+
+    <dimen name="ButtonCornerSize">2.0dip</dimen>
+    <dimen name="normalButtonHeight">38.0dip</dimen>
+
+    <dimen name="largePadding">16.0dip</dimen>
+
+    <dimen name="bigButtonTextSize">18.0dip</dimen>
+
+    <dimen name="category_layout_width">100dip</dimen>
+
+    <dimen name="basicPaddingSize">4.0dip</dimen>
+
+    <dimen name="smallButtonWidth">48.0dip</dimen>
+    <dimen name="smallButtonHeight">32.0dip</dimen>
+    <dimen name="smallButtonTextSize">14.0dip</dimen>
+    <dimen name="smallPadding">8.0dip</dimen>
+    <dimen name="buttonCornerSize">2.0dp</dimen>
+
+</resources>
